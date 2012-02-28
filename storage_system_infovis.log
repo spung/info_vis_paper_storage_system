@@ -1,0 +1,410 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  28 FEB 2012 15:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**storage_system_infovis.tex
+(./storage_system_infovis.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+(./vgtc.cls
+Document Class: vgtc 2006/05/21 IEEE VGTC
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\captionmargin=\skip43
+\bibindent=\dimen103
+\bibspacing=\dimen104
+\titlespace=\skip44
+\teaserspace=\skip45
+\abstxtspace=\skip46
+\vgtc@copyrightlength=\skip47
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@ALC@unique=\count87
+\c@ALC@line=\count88
+\c@ALC@rem=\count89
+\c@ALC@depth=\count90
+\ALC@tlm=\skip48
+\algorithmicindent=\skip49
+)
+(./storage_system_infovis.aux)
+\openout1 = `storage_system_infovis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 113.
+
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+\big@size=\dimen107
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 121.
+
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 12
+1.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 12
+1.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 12
+1.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 12
+1.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+File: demo.eps Graphic file (type eps)
+ <demo.eps>
+Overfull \hbox (47.69846pt too wide) in paragraph at lines 121--121
+ [] []  
+ []
+
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 121.
+File: diamondrule.eps Graphic file (type eps)
+<diamondrule.eps>
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 121.
+LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <9> not available
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 121.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 121.
+
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+]
+File: images/prev_tool2.eps Graphic file (type eps)
+
+<images/prev_tool2.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 134--135
+ [][] 
+ []
+
+File: images/data_binning.eps Graphic file (type eps)
+<images/data_binning.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 170--171
+ [][] 
+ []
+
+[2]
+File: images/temporal_depth.eps Graphic file (type eps)
+ <images/temporal_depth.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 186--187
+ [][] 
+ []
+
+File: images/curves.eps Graphic file (type eps)
+<images/curves.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 207--208
+ [][] 
+ []
+
+File: images/spread.eps Graphic file (type eps)
+<images/spread.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 217--218
+ [][] 
+ []
+
+[3]
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 239.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 239.
+File: images/overview.eps Graphic file (type eps)
+ <images/overview.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 280--281
+ [][] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 288.
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+[]\OT1/ptm/m/n/9 Queue Com-mand
+ []
+
+[4]
+File: images/histograms.eps Graphic file (type eps)
+ <images/histograms.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 363--364
+ [][] 
+ []
+
+File: images/discrete.eps Graphic file (type eps)
+<images/discrete.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: images/brush_focus5.eps Graphic file (type eps)
+<images/brush_focus5.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 383--384
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: images/demo.eps Graphic file (type eps)
+<images/demo.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 390--391
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5]
+File: images/interleaved_bw.eps Graphic file (type eps)
+ <images/interleaved_bw.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 400--401
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: images/color_overview.eps Graphic file (type eps)
+<images/color_overview.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 410--411
+ [][] 
+ []
+
+File: images/interleaved_color2.eps Graphic file (type eps)
+<images/interleaved_color2.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 419--420
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: images/interleaved_color4.eps Graphic file (type eps)
+<images/interleaved_color4.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 426--427
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: images/context_menu.eps Graphic file (type eps)
+
+<images/context_menu.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: images/select_range.eps Graphic file (type eps)
+<images/select_range.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 496--497
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7]
+File: images/prev_tool.eps Graphic file (type eps)
+ <images/prev_tool.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 510--511
+ [][] 
+ []
+
+File: images/lba_banding_full.eps Graphic file (type eps)
+<images/lba_banding_full.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 519--520
+ [][] 
+ []
+
+File: images/11.eps Graphic file (type eps)
+<images/11.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 526--527
+ [][] 
+ []
+
+File: images/no_queue.eps Graphic file (type eps)
+<images/no_queue.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 535--536
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8] (./storage_system_infovis.bbl
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 13.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 1533) in paragraph at lines 28--33
+[]\OT1/ptm/m/n/8 A. Huff-man and J. Clark.  Se-rial ATA Na-tive Com-mand Queu-
+ []
+
+
+Underfull \hbox (badness 4217) in paragraph at lines 28--33
+\OT1/ptm/m/n/8 ing.  White pa-per, In-tel Cor-po-ra-tion and Sea-gate Tech-nol-
+ogy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--33
+\OT1/pcr/m/n/8 http : / / www . seagate . com / content / pdf / whitepaper /
+ []
+
+[9]) [10
+
+] (./storage_system_infovis.aux) ) 
+Here is how much of TeX's memory you used:
+ 1272 strings out of 493634
+ 17140 string characters out of 3143401
+ 78323 words of memory out of 3000000
+ 4558 multiletter control sequences out of 15000+200000
+ 30618 words of font info for 72 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 29i,9n,21p,1744b,379s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on storage_system_infovis.dvi (10 pages, 66612 bytes).

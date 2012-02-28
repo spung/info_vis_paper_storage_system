@@ -1,0 +1,79 @@
+\begin{thebibliography}{10}
+
+\bibitem{internal:collab}
+{Chris Lupo, John Oliver, and Western Digital Corporation}.
+\newblock Data storage system research collaborative.
+\newblock A collaborative effort between Cal Poly and Western Digital intended
+  to analyze various workloads of corporate data centers in order to address
+  areas of improvement in disk utilization.
+
+\bibitem{qt:nokia}
+N.~Corporation.
+\newblock {Qt - A cross-platform application and UI framework}.
+\newblock \url{http://qt.nokia.com/products/}.
+
+\bibitem{internal:requirements}
+W.~D. Corporation.
+\newblock Internal conversations regarding internal software tools currently
+  used to analyze storage system workloads.
+
+\bibitem{Graham:2003:UCE}
+M.~Graham and J.~Kennedy.
+\newblock Using curves to enhance parallel coordinate visualizations.
+\newblock In {\em Proceedings of the Seventh International Conference on
+  Information Visualization}, pages 10--16, Washington, DC, USA, 2003. IEEE
+  Computer Society.
+
+\bibitem{ncq:whitepaper}
+A.~Huffman and J.~Clark.
+\newblock {Serial ATA Native Command Queuing}.
+\newblock White paper, Intel Corporation and Seagate Technology
+  \url{http://www.seagate.com/content/pdf/whitepaper/D2c_tech_paper_intc-stx_sata_ncq.pdf},
+  July 2003.
+
+\bibitem{Inselberg:1990:PCT:949531.949588}
+A.~Inselberg and B.~Dimsdale.
+\newblock Parallel coordinates: A tool for visualizing multi-dimensional
+  geometry.
+\newblock In {\em Proceedings of the 1st Conference on Visualization '90}, VIS
+  '90, pages 361--378, Los Alamitos, CA, USA, 1990. IEEE Computer Society
+  Press.
+
+\bibitem{johansson:2007:DCDTPC}
+J.~Johansson, P.~Ljung, and M.~Cooper.
+\newblock Depth cues and density in temporal parallel coordinates.
+\newblock In {\em EuroVis}, pages 35--42, 2007.
+
+\bibitem{McDonnell_Mueller_2008}
+K.~McDonnell and K.~Mueller.
+\newblock Illustrative parallel coordinates.
+\newblock {\em Computer Graphics Forum}, 27(3):1031--1038, 2008.
+
+\bibitem{novotny:2006:OPFC}
+M.~Novotny and H.~Hauser.
+\newblock Outlier-preserving focus+context visualization in parallel
+  coordinates.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  12(9):893--900, Nov. 2006.
+
+\bibitem{peng:2005:CRMD}
+W.~Peng, M.~O. Ward, and E.~A. Rundensteiner.
+\newblock Clutter reduction in multi-dimensional data visualization using
+  dimension reordering.
+\newblock {\em IEEE Symposium on Information Visualization}, 24(4):89--96, Jan.
+  2005.
+
+\bibitem{internal:understanding}
+W.~D.~C. Scott~Olds, Wayne~Vinson.
+\newblock Understanding drive performance: Performance architecture, modeling,
+  and algorithms.
+\newblock Internal document provided through Cal Poly Data Storage System
+  Research Collaborative.
+
+\bibitem{website:binning}
+K.~M.~V. Thomas J.~Fellers and M.~W. Davidson.
+\newblock {CCD} signal-to-noise ratio.
+\newblock
+  \url{http://www.microscopyu.com/tutorials/java/digitalimaging/signaltonoise/index.html}.
+
+\end{thebibliography}
