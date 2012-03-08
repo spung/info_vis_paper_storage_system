@@ -59,11 +59,11 @@
 %% This is how authors are specified in the journal style
 
 %% indicate IEEE Member or Student Member in form indicated below
-\author{Steven C. Pungdumri, Chris Lupo, John Oliver, and Zoe Wood}
+\author{Steven C. Pungdumri, Chris Lupo, Zo\"{e} Wood, and John Oliver}
 \authorfooter{
 %% insert punctuation at end of each item
 \item
- Steven C. Pungdumri, Chris Lupo, John Oliver, and Zoe Wood are with Cal Poly San Luis Obispo, E-mail: spungdum@calpoly.edu, clupo@calpoly.edu, joliver@calpoly.edu, zwood@calpoly.edu.
+ Steven C. Pungdumri, Chris Lupo, Zo\"{e} Wood, and John Oliver are with Cal Poly San Luis Obispo, E-mail: spungdum@calpoly.edu, clupo@calpoly.edu, joliver@calpoly.edu, zwood@calpoly.edu.
 }
 
 %other entries to be set up for journal
@@ -71,11 +71,12 @@
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 %% Abstract section.
-\abstract{As technology progresses, the rate at which we utilize computer data storage is rapidly increasing, which results in an enormous amount of data being stored and accessed in data centers around the world. The ability to visualize and analyze storage system workloads, specifically bus activity traces between host and storage systems, would be greatly beneficial for storage system developers and administrators seeking to optimize their systems for reliability and efficiency. Inefficiencies in storage system design and administration become apparent with a vast amount of data constantly accessed, such as the algorithms directly pertaining to disk usage both at the software application and embedded hard disk firmware levels. These inefficiencies consequently incur costs associated with failed or underutilized storage media. Captures of storage network activity can provide a window into these systems by gathering meta data that describes the storage accesses occurring over periods of time. However, analyzing and extracting meaningful information from these captures is overwhelming both because of the amount of meta data captured, and the multidimensional, temporal, and spatial characteristics of these datasets.
+\abstract{
+The performance of hard disks has become increasingly important as the volume of data storage increases. At the bottom level of large-scale storage networks is the hard disk. Despite the importance of hard drives in a storage network, it is often difficult to analyze the performance of hard disks due to the sheer size of the datasets seen by hard disks.  Additionally, hard drive workloads can have several multi-dimensional characteristics, such as access time, queue depth and block-address space. The result is that hard drive workloads are extremely diverse and large, making extracting meaninful information from hard drive workloads very difficult. This is one reason why there are several inefficiencies in storage networks.  
 
-In this paper, we develop a system that assists in communicating valuable insights into these datasets, resulting in an approach that utilizes parallel coordinates to model data storage workloads captured with bus analyzers. Users are presented with an effective visualization of workload captures with this implementation, along with methods to interact with and manipulate the model in order to more clearly analyze their storage systems.
+In this paper, we develop a tool that assists in communicating valuable insights into these datasets, resulting in an approach that utilizes parallel coordinates to model data storage workloads captured with bus analyzers. Users are presented with an effective visualization of workload captures with this implementation, along with methods to interact with and manipulate the model in order to more clearly analyze the lowest level of their storage systems. 
 
-Design decisions regarding the feature set of this tool are based on the analysis needs of domain experts and feedback from a conducted user study. Results from our user study evaluations demonstrate the efficacy of our tool to observe valuable insights, which can potentially assist in future storage system design and deployment decisions.
+Design decisions regarding the feature set of this tool are based on the analysis needs of domain experts and feedback from a conducted user study. Results from our user study evaluations demonstrate the efficacy of our tool to observe valuable insights, which can potentially assist in future storage system design and deployment decisions. Using this tool, domain experts were able to detect Logical Block Address banding and observe various dataset trends which were not readily noticeable using conventional analysis methods.
 } % end of abstract
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
@@ -127,7 +128,7 @@ Modeling complex data storage system workloads, specifically bus activity traces
 \subsection{Current Methods}
 \label{current_methods}
 
-Current bus analyzer software tools often focus on bus protocol rather than providing a broad overview of what is occurring between host and storage. Many of the more sophisticated offerings of bus trace analysis tools are developed in house by corporations interested in optimizing their products or systems, rather than the manufacturers of the bus analyzers. Current methods developed generate graphs which are static and do not allow manipulations to the visualization while viewing the data, lacking functions such as scaling particular areas of interest and highlighting interesting trends. At most, these tools offer various graphs comparing a few dimensions of data at a time, as well as general statistics of the input data~\cite{internal:understanding}. Figure \ref{fig:prev_tool2} illustrates a screenshot of a tool currently utilized by our collaborators in the storage system industry to analyze storage system bus captures, here plotting number of sector and logical block address (LBA) values. While this plot and similar tools have proven effective at analyzing these datasets, they are limited in the amount of data they can display. These tools are simple and prove effective, however it is not possible to view more than a few dimensions of records at once, which is less likely to effectively convey a larger picture of the activity between host and storage.
+Currently, storage system performance is captured using bus analyzers, a tool that is designed to observe particular computer bus protocols for the intention of analyzing bus or device failures. Current bus analyzer software tools often focus on bus protocol rather than providing a broad overview of what is occurring between host and storage. Many of the more sophisticated offerings of bus trace analysis tools are developed in house by corporations interested in optimizing their products or systems, rather than the manufacturers of the bus analyzers. Current methods developed generate graphs which are static and do not allow manipulations to the visualization while viewing the data, lacking functions such as scaling particular areas of interest and highlighting interesting trends. At most, these tools offer various graphs comparing a few dimensions of data at a time, as well as general statistics of the input data~\cite{internal:understanding}. Figure \ref{fig:prev_tool2} illustrates a screenshot of a tool currently utilized by our collaborators in the storage system industry to analyze storage system bus captures, here plotting number of sector and logical block address (LBA) values. While this plot and similar tools have proven effective at analyzing these datasets, they are limited in the amount of data they can display. These tools are simple and prove effective, however it is not possible to view more than a few dimensions of records at once, which is less likely to effectively convey a larger picture of the activity between host and storage.
 
 \begin{figure}[h!]
  \centering
@@ -161,63 +162,28 @@ Areas of further research commonly entail the implementation of an additional ap
 \label{data_binning}
 Data binning is a preprocessing technique that quantizes data by categorizing the original data points as bins as they fall within specified intervals~\cite{website:binning}. Using this technique for large datasets can effectively convey trends, at the cost of less resolution.
 
-Novotny and Hauser were effective in illustrating context and outliers by applying a binned data method~\cite{novotny:2006:OPFC}. This implementation used a preprocess data binning approach to identify common trends between each pair of dimensions, which made it easier to visually comprehend these trends as well as reducing the load on rendering by using parallelograms for each grouping, rather than individual polylines. They proceeded to identify outliers by leveraging their data binning and rendered these with the typical approach of using polylines to ensure their distinction, and rendered the user specified focus (brushing) with the same method as well. Figure \ref{fig:data_binning} illustrates a flow simulation dataset of two fluids mixing, rendering prominent parallelograms representing bins of data, as opposed to the higher resolution of individual polylines.
+Novotny and Hauser were effective in illustrating context and outliers by applying a binned data method~\cite{novotny:2006:OPFC}. This implementation used a preprocess data binning approach to identify common trends between each pair of dimensions, which made it easier to visually comprehend these trends as well as reducing the load on rendering by using parallelograms for each grouping, rather than individual polylines. They proceeded to identify outliers by leveraging their data binning and rendered these with the typical approach of using polylines to ensure their distinction, and rendered the user specified focus (brushing) with the same method as well.
 
 This implementation of parallel coordinates would be effective for any general dataset that requires the identification of trends, outliers, and user focus. As with any approach that decreases data resolution, information can be obfuscated as well. Data binning would be a promising area to investigate for the future work of our tool.
-
-\begin{figure}[h!]
- \centering
- \includegraphics[width=0.5\textwidth]{images/data_binning.eps}
- \caption[Data bins rendered as polygons rather than individual polylines.]{Data bins rendered as polygons rather than the standard plot with individual polylines.}
- \label{fig:data_binning}
-\end{figure}
 
 \subsection{Temporal Depth Cues}
 \label{temporal_depth_cues}
 
-Storage system workloads are both spatial and temporal. Analyzing the changes across time may produce insights that would be less apparent otherwise.
-
-Johansson et al. investigate the illustration of depth cues in temporal parallel coordinates~\cite{johansson:2007:DCDTPC}. This research produced a temporal window by constructing density maps and utilizing transfer functions. A depth cue visualization was produced based on temporal binning, perception based coloring, and concepts from volume rendering. In Figure \ref{fig:temporal_depth} we see an example of visualizing a large, time-varying, multivariate dataset, rendering polygons when the size of changes between time steps increases.
+Johansson et al. investigated the illustration of depth cues in temporal parallel coordinates~\cite{johansson:2007:DCDTPC}. Storage system workloads are both spatial and temporal, therefore analyzing the changes across time may produce insights that would be less apparent otherwise. This research produced a temporal window by constructing density maps and utilizing transfer functions. A depth cue visualization was produced based on temporal binning, perception based coloring, and concepts from volume rendering.
 
 This approach does not seem as effective when applied to a data storage analysis capture where informative discoveries lie in the identification of common trends and outliers found in the dataset at all points in time, because the value from an in-depth temporal analysis would illustrate how significant the dataset changes over varying time periods.
 
-\begin{figure}[h!]
- \centering
- \includegraphics[width=0.5\textwidth]{images/temporal_depth.eps}
- \caption{Temporal depth cues used to convey time-varying multivariate data.}
- \label{fig:temporal_depth}
-\end{figure}
-
 \subsection{Dimension Reordering}
 \label{dimensional_reordering}
-Ordering of dimensions can be important with visualizing multidimensional datasets. It is difficult to manually determine what the most effective arrangement is with many dimensions; this can depend on characteristics of the data being analyzed, as well as the information the user intends to extract from it.
-
-Dimension reordering is another area of parallel coordinates researched to reduce clutter in visualizations~\cite{peng:2005:CRMD}. Although most implementations of parallel coordinates allow manual reordering, this can be exhaustive when searching for a more effective ordering of dimensions. This particular implementation defined a metric used to measure the amount of clutter, and applied it to all possible arrangements to identify the one with the least amount of clutter. This metric relies on normalized Euclidean distances between data points and a user adjustable threshold to determine the sensitivity of clutter detection. From here, a few algorithms were proposed for optimally searching for the least cluttered arrangement. 
+Dimension reordering is another area of parallel coordinates researched to reduce clutter in visualizations~\cite{peng:2005:CRMD}. Ordering of dimensions can be important with visualizing multidimensional datasets. It is difficult to manually determine what the most effective arrangement is with many dimensions; this can depend on characteristics of the data being analyzed, as well as the information the user intends to extract from it. Although most implementations of parallel coordinates allow manual reordering, this can be exhaustive when searching for a more effective ordering of dimensions. This particular implementation defined a metric used to measure the amount of clutter, and applied it to all possible arrangements to identify the one with the least amount of clutter. This metric relies on normalized Euclidean distances between data points and a user adjustable threshold to determine the sensitivity of clutter detection. From here, a few algorithms were proposed for optimally searching for the least cluttered arrangement. 
 
 While this is an interesting approach, we would like to accumulate more feedback from experts in our data storage system domain to analyze if any trends appear for the arrangement of dimensions that is most effective, and whether it correlates to the amount of clutter observed before incorporating this functionality in our tool. Ultimately, manually analyzing variations in ordering for the nineteen dimensions in our datasets is not feasible, therefore an automated approach such as this would be a beneficial area of future work.
 
 \subsection{Visualization Enhancing Curves}
 \label{curves}
-An ambiguity often found in basic implementations of parallel coordinates is when a common point is shared among multiple records, making it difficult to establish which direction each of the records proceeds on towards the adjacent dimension. When following a record preceding the intersecting point on a dimension, the resulting polyline could be any of the polylines stemming from the intersection at the dimension.
+An ambiguity often found in basic implementations of parallel coordinates is when a common point is shared among multiple records, making it difficult to establish which direction each of the records proceeds on towards the adjacent dimension. When following a record preceding the intersecting point on a dimension, the resulting polyline could be any of the polylines stemming from the intersection at the dimension. This particular implementation resolves this conflict with curves instead of polylines, which hints to human visual processing at the resulting direction of each record by following the best fit curve matching to its preceding counterpart~\cite{Graham:2003:UCE}.
 
-This particular implementation resolves this conflict with curves instead of polylines, which hints to human visual processing at the resulting direction of each record by following the best fit curve matching to its preceding counterpart~\cite{Graham:2003:UCE}. Figure \ref{fig:curves1} illustrates a dataset of individuals and their career qualifications gathered from a research project that intends to assist businesses in forming project groups for particular projects. This Figure demonstrates the use of curves, as opposed to polylines for clarification at points of intersection on each dimension. 
-
-\begin{figure}[h!]
- \centering
- \includegraphics[width=0.5\textwidth]{images/curves.eps}
- \caption[Curves used to address crossover uncertainties.]{Curves used to address crossover uncertainties when records share a crossover point on a dimension.}
- \label{fig:curves1}
-\end{figure}
-
-A focus+context feature further spreads these records and includes a bounding box to indicate if a point with multiple records has been spread. The repositioning is calculated by moving the dimensional crossing point proportionally to its average position in the preceding and following dimensions, a technique which can be accomplished without curves as well. The spreading technique is illustrated in Figure \ref{fig:curves2}, first showing an example without spread at an intersection, then spreading at the same intersection with a bounding box to convey the original point of intersection. The rendering of curves as opposed to polylines comes at the expense of performance, requiring optimizations in data preprocessing as well as repainting algorithms.
-
-
-\begin{figure}[h!]
- \centering
- \includegraphics[width=0.5\textwidth]{images/spread.eps}
- \caption[Spreading at a crossover point to display individual data records.]{An initial implementation without spreading at a crossover dimension point, followed by spreading at the same point to clearly display individual data records.}
- \label{fig:curves2}
-\end{figure}
+A focus+context feature further spreads these records and includes a bounding box to indicate if a point with multiple records has been spread. The repositioning is calculated by moving the dimensional crossing point proportionally to its average position in the preceding and following dimensions, a technique which can be accomplished without curves as well. The rendering of curves as opposed to polylines comes at the expense of performance, requiring optimizations in data preprocessing as well as repainting algorithms.
 
 This approach seems promising, however it will be left as future work after extensive user feedback to assess the current level of clarity at crossover points across dimensions. From there, it can be determined if the benefits found in this work could extend to modeling data storage system workloads.
 
@@ -278,7 +244,7 @@ Our input dataset output is in CSV format, output from bus analyzer preprocessin
 \begin{figure}[h!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/overview.eps}
- \caption[Overview mode of a sample storage system workload dataset.]{Overview mode of a sample storage system workload dataset with all dimensions displayed.}
+ \caption[Overview mode of a sample storage system workload dataset.]{Viewing the default overview mode of a sample storage system workload dataset, which displays all dimensions and all records of the dataset.}
  \label{fig:overview}
 \end{figure}
 
@@ -361,14 +327,14 @@ Another defining feature of our visualization is circular histograms, which illu
 \begin{figure}[h!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/histograms.eps}
- \caption[Parallel coordinates visualization with histogram bars overlayed.]{Parallel coordinates visualization of a car dataset with histogram bars overlayed at point distributions along axes~\cite{McDonnell_Mueller_2008}.}
+ \caption[Parallel coordinates visualization with histogram bars overlayed.]{An example of a parallel coordinates visualization of a car dataset with histogram bars implemented and overlayed at point distributions along axes~\cite{McDonnell_Mueller_2008}.}
  \label{fig:histograms_ex}
 \end{figure}
 
 \begin{figure}[h!]
  \centering
  \includegraphics[width=0.25\textwidth]{images/discrete.eps}
- \caption{Discrete axes illustrated with circular histograms to convey trends.}
+ \caption[Discrete axes illustrated with circular histograms to convey trends.]{Our implementation of discrete axes, illustrated with passive circular histograms. Circular histograms are underlaid in order to convey trends without interfering with observing dataset records.}
  \label{fig:histograms}
 \end{figure}
 
@@ -381,14 +347,14 @@ Brushing is a common feature in parallel coordinates that allows users to brush 
 \begin{figure}[h!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/brush_focus5.eps}
- \caption[Applying brushing to a range of commands in the dataset.]{Focusing on a particular range of data and applying brushing to a range of commands.}
+ \caption[Applying brushing to a range of commands in the dataset.]{A focus applied on a particular range of data to filter out all records not within the selected range, as well as brushing applied to all commands within the second half of the dataset.}
  \label{fig:brush}
 \end{figure}
 
 \begin{figure}[h!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/demo.eps}
- \caption[Storage system workload dataset with write commands brushed.]{Overview of a storage system workload dataset with all write commands brushed.}
+ \caption[Storage system workload dataset with write commands brushed.]{Viewing the default overview mode of a sample storage system workload dataset, with brushing applied to highlight all write commands in the dataset.}
  \label{fig:brush2}
 \end{figure}
 
@@ -398,7 +364,7 @@ Users can apply a focus on the dataset, which crops out all command values outsi
 \begin{figure}[h!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/interleaved_bw.eps}
- \caption[Thread interleaving observed by focusing on a range of data.]{Apparent thread interleaving observed by focusing on a particular range of data.}
+ \caption[Thread interleaving observed by focusing on a range of data.]{Thread interleaving observed after applying a focus on a particular range of commands occuring sequentially.}
  \label{fig:focus_interleaving}
 \end{figure}
 
@@ -408,7 +374,7 @@ Data storage designers we consulted with expressed an interest in identifying in
 \begin{figure}[h!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/color_overview.eps}
- \caption[Identified threads rendered with a thread exclusive color.]{Overview of a sample storage system workload dataset with each machine identified thread rendered with a thread exclusive color.}
+ \caption[Identified threads rendered with a thread exclusive color.]{Viewing the overview mode of a sample storage system workload dataset with each machine identified thread rendered with a thread exclusive color.}
  \label{fig:color_overview}
 \end{figure}
 
@@ -417,14 +383,14 @@ We suggest the use of thread coloring in conjunction with a user specified focus
 \begin{figure}[h!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/interleaved_color2.eps}
- \caption[Identified threads rendered with a thread exclusive color.]{Interleaved threads conveyed by illustrating each machine identified thread with a thread exclusive color.}
+ \caption[Identified threads rendered with a thread exclusive color.]{Applying a focus on a particular range of commands occuring sequentially and observing interleaved threads conveyed by illustrating each machine identified thread with a thread exclusive color.}
  \label{fig:color_focus1}
 \end{figure}
 
 \begin{figure}[h!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/interleaved_color4.eps}
- \caption[A subset of data rendered with a thread exclusive colors.]{Focusing on a smaller subset of data more clearly displays interleaved threads, conveyed by illustrating each machine identified thread with a thread exclusive color.}
+ \caption[A subset of data rendered with a thread exclusive colors.]{Focusing on a smaller subset of commands occuring sequentially, which more clearly displays interleaved threads, conveyed by illustrating each machine identified thread with a thread exclusive color.}
  \label{fig:color_focus2}
 \end{figure}
 
@@ -542,7 +508,32 @@ These results contribute to the validation of our tool as an effective approach 
 \subsection{User Study}
 We conducted a user study in order to determine the effectiveness of our visualization, as well as gather feedback regarding areas of future work. Our user study primarily focused on the ability to convey information from the workload datasets, illustrate general trends and outliers, and the usability of navigating the tool and manipulating the data. We designed our study to incorporate both quantifiable and open-ended channels of feedback in order to refrain from limiting users from expressing ideas for future work.
 
-Our user group consists of one domain expert from Western Digital, one electrical engineering professor, one computer science professor, and one computer science graduate student. Overall, the feedback was generally positive regarding both the effectiveness and usability of our tool. The limitations expressed in this study are identified as our known limitations. Quantifiable questions yielded a 3.5 average regarding the clarity of labeling in the tool, and a 5.0 average regarding the understanding of our thread coloring visualization, both on a 5.0 scale. 
+Our user group consists of one domain expert from Western Digital, one electrical engineering professor, one computer science professor, and one computer science graduate student. We provided our users with a sample dataset, the visualization tool, documentation, and the following questions:
+
+\begin{enumerate}
+\item How well do you understand the meaning of the text labels throughout the visualization? Please rate your understanding on a quantitative scale of 1-5, 1 being: ``I have no idea what these labels mean'' and 5 being: ``I completely understand the labels''.
+
+\item Please provide any suggestions for labels (regarding question 1).
+
+\item How well do you understand the purpose of the ``Color Threads" mode? Please go through the documentation and try coloring threads (it may be helpful to focus on a particular time/command\_id/LBA range) before answering this question. Rate your understanding on a quantitative scale of 1-5, 1 being: ``I have no idea what `Color Threads' does besides showing me crazy colors.'' and 5 being: ``I completely understand what `Color Threads' shows me".
+
+\item Please provide any suggestions for coloring threads (regarding question 3).
+
+\item What temporal trends do you notice of Read vs. Write commands in this data set? Please go through the documentation and try brushing ranges of data (hint: brushing certain ranges on a particular axis will be particularly helpful for noticing trends for this question).
+
+\item Describe the interleaving occurring between command\_id's: 34550-37882. Please go through the documentation and perform the following steps before answering this question: 
+\begin{itemize}
+\item Focus on the command\_id axis between 34550 and 37882 
+\item Enable the Color Threads mode 
+\item Apply scaling (zoom in)
+\item Hide other axes that are irrelevant.
+\end{itemize}
+
+\item Please provide any other general feedback, areas of improvement, and/or comments.
+
+\end{enumerate}
+
+Overall, the feedback was generally positive regarding both the effectiveness and usability of our tool. The limitations expressed in this study are identified as our known limitations. Quantifiable questions yielded a 3.5 average regarding the clarity of labeling in the tool, and a 5.0 average regarding the understanding of our thread coloring visualization, both on a 5.0 scale. 
 
 \subsection{Known Limitations}
 We have been able to identify the following limitations in usability and overall effectiveness with the participants in our user study, especially domain experts. It would be more intuitive to perform axis rearranging with drag and drop actions, rather than through the current use of context menus to address usability. Similarly, for selecting the range of data to create a focus on, or brush and highlight, it would be useful to also have the option to click and drag to select ranges within a bounding box.

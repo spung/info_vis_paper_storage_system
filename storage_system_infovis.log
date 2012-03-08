@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  28 FEB 2012 15:25
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  8 MAR 2012 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -126,90 +126,87 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 (./storage_system_infovis.aux)
 \openout1 = `storage_system_infovis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 113.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 114.
 
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \big@size=\dimen107
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 121.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 122.
 
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 12
-1.
+2.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 12
-1.
+2.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 12
-1.
+2.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 12
-1.
+2.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 File: demo.eps Graphic file (type eps)
  <demo.eps>
-Overfull \hbox (47.69846pt too wide) in paragraph at lines 121--121
+Overfull \hbox (47.69846pt too wide) in paragraph at lines 122--122
  [] []  
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 121.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 122.
 File: diamondrule.eps Graphic file (type eps)
 <diamondrule.eps>
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 121.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <9> not available
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 121.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 121.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 122.
 
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 122.
  [1
 
 
@@ -217,57 +214,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/prev_tool2.eps Graphic file (type eps)
 
 <images/prev_tool2.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 134--135
- [][] 
- []
-
-File: images/data_binning.eps Graphic file (type eps)
-<images/data_binning.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 170--171
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 135--136
  [][] 
  []
 
 [2]
-File: images/temporal_depth.eps Graphic file (type eps)
- <images/temporal_depth.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 186--187
- [][] 
- []
-
-File: images/curves.eps Graphic file (type eps)
-<images/curves.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 207--208
- [][] 
- []
-
-File: images/spread.eps Graphic file (type eps)
-<images/spread.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 217--218
- [][] 
- []
-
-[3]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 239.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 205.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 239.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 205.
+ [3]
 File: images/overview.eps Graphic file (type eps)
  <images/overview.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 280--281
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 246--247
  [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 288.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 254.
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 []\OT1/ptm/m/n/9 Queue Com-mand
  []
+
+
+LaTeX Warning: Reference `fig:curves2' on page 4 undefined on input line 325.
 
 [4]
 File: images/histograms.eps Graphic file (type eps)
  <images/histograms.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 363--364
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 329--330
  [][] 
  []
 
@@ -278,7 +254,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: images/brush_focus5.eps Graphic file (type eps)
 <images/brush_focus5.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 383--384
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 349--350
  [][] 
  []
 
@@ -287,7 +263,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: images/demo.eps Graphic file (type eps)
 <images/demo.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 390--391
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 356--357
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: images/interleaved_bw.eps Graphic file (type eps)
+<images/interleaved_bw.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 366--367
  [][] 
  []
 
@@ -295,24 +280,15 @@ Overfull \hbox (6.14288pt too wide) in paragraph at lines 390--391
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5]
-File: images/interleaved_bw.eps Graphic file (type eps)
- <images/interleaved_bw.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 400--401
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 File: images/color_overview.eps Graphic file (type eps)
-<images/color_overview.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 410--411
+ <images/color_overview.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 376--377
  [][] 
  []
 
 File: images/interleaved_color2.eps Graphic file (type eps)
 <images/interleaved_color2.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 419--420
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 385--386
  [][] 
  []
 
@@ -321,16 +297,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: images/interleaved_color4.eps Graphic file (type eps)
 <images/interleaved_color4.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 426--427
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 392--393
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [6]
 File: images/context_menu.eps Graphic file (type eps)
 
 <images/context_menu.eps>
@@ -339,40 +316,51 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: images/select_range.eps Graphic file (type eps)
 <images/select_range.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 496--497
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 462--463
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7]
 File: images/prev_tool.eps Graphic file (type eps)
- <images/prev_tool.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 510--511
+<images/prev_tool.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 476--477
  [][] 
  []
 
+[7]
 File: images/lba_banding_full.eps Graphic file (type eps)
-<images/lba_banding_full.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 519--520
+ <images/lba_banding_full.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 485--486
  [][] 
  []
 
 File: images/11.eps Graphic file (type eps)
 <images/11.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 526--527
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 492--493
  [][] 
  []
 
 File: images/no_queue.eps Graphic file (type eps)
 <images/no_queue.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 535--536
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 501--502
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 518--519
+\OT1/ptm/m/n/9 or-ing threads (it may be help-ful to fo-cus on a par-tic-u-lar
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 524--525
+[]\OT1/ptm/m/n/9 Describe the in-ter-leav-ing oc-cur-ring be-tween com-mand[]id
+'s:
+ []
 
 [8] (./storage_system_infovis.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 13.
@@ -395,16 +383,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--33
 \OT1/pcr/m/n/8 http : / / www . seagate . com / content / pdf / whitepaper /
  []
 
-[9]) [10
+) [9] (./storage_system_infovis.aux)
 
-] (./storage_system_infovis.aux) ) 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1272 strings out of 493634
- 17140 string characters out of 3143401
- 78323 words of memory out of 3000000
- 4558 multiletter control sequences out of 15000+200000
+ 1263 strings out of 493634
+ 16967 string characters out of 3143401
+ 77176 words of memory out of 3000000
+ 4552 multiletter control sequences out of 15000+200000
  30618 words of font info for 72 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  29i,9n,21p,1744b,379s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on storage_system_infovis.dvi (10 pages, 66612 bytes).
+Output written on storage_system_infovis.dvi (9 pages, 66588 bytes).
