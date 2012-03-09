@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  8 MAR 2012 15:00
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  8 MAR 2012 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -238,6 +238,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--269
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+
 LaTeX Warning: Reference `fig:curves2' on page 4 undefined on input line 325.
 
 [4]
@@ -305,7 +310,7 @@ Overfull \hbox (6.14288pt too wide) in paragraph at lines 392--393
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1205) has occurred while \output is active []
 
  [6]
 File: images/context_menu.eps Graphic file (type eps)
@@ -323,67 +328,74 @@ Overfull \hbox (6.14288pt too wide) in paragraph at lines 462--463
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[7]
 File: images/prev_tool.eps Graphic file (type eps)
-<images/prev_tool.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 476--477
+ <images/prev_tool.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 478--479
  [][] 
  []
 
-[7]
 File: images/lba_banding_full.eps Graphic file (type eps)
- <images/lba_banding_full.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 485--486
+<images/lba_banding_full.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 487--488
  [][] 
  []
 
 File: images/11.eps Graphic file (type eps)
 <images/11.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 492--493
- [][] 
- []
-
-File: images/no_queue.eps Graphic file (type eps)
-<images/no_queue.eps>
-Overfull \hbox (6.14288pt too wide) in paragraph at lines 501--502
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 494--495
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+File: images/no_queue.eps Graphic file (type eps)
+<images/no_queue.eps>
+Overfull \hbox (6.14288pt too wide) in paragraph at lines 503--504
+ [][] 
+ []
 
-Underfull \hbox (badness 1371) in paragraph at lines 518--519
+[8]
+Underfull \hbox (badness 1371) in paragraph at lines 520--521
 \OT1/ptm/m/n/9 or-ing threads (it may be help-ful to fo-cus on a par-tic-u-lar
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 524--525
+Underfull \hbox (badness 1221) in paragraph at lines 526--527
 []\OT1/ptm/m/n/9 Describe the in-ter-leav-ing oc-cur-ring be-tween com-mand[]id
 's:
  []
 
-[8] (./storage_system_infovis.bbl
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 13.
+(./storage_system_infovis.bbl
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 21.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1533) in paragraph at lines 28--33
+Underfull \hbox (badness 1533) in paragraph at lines 18--23
 []\OT1/ptm/m/n/8 A. Huff-man and J. Clark.  Se-rial ATA Na-tive Com-mand Queu-
  []
 
 
-Underfull \hbox (badness 4217) in paragraph at lines 28--33
+Underfull \hbox (badness 4217) in paragraph at lines 18--23
 \OT1/ptm/m/n/8 ing.  White pa-per, In-tel Cor-po-ra-tion and Sea-gate Tech-nol-
 ogy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--33
+Underfull \hbox (badness 10000) in paragraph at lines 18--23
 \OT1/pcr/m/n/8 http : / / www . seagate . com / content / pdf / whitepaper /
  []
 
-) [9] (./storage_system_infovis.aux)
+[9]
+Underfull \hbox (badness 1533) in paragraph at lines 69--73
+[]\OT1/ptm/m/n/8 T. J. Fellers, K. M. Vogt, and M. W. David-son.  CCD signal-
+ []
+
+) [10
+
+] (./storage_system_infovis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -397,4 +409,4 @@ Here is how much of TeX's memory you used:
  831 hyphenation exceptions out of 8191
  29i,9n,21p,1744b,379s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on storage_system_infovis.dvi (9 pages, 66588 bytes).
+Output written on storage_system_infovis.dvi (10 pages, 69416 bytes).

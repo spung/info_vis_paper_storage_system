@@ -73,9 +73,9 @@
 %% Abstract section.
 \abstract{
 The performance of hard disks has become increasingly important as the volume of data storage increases. At the bottom level of large-scale storage networks is the hard disk. Despite the importance of hard drives in a storage network, it is often difficult to analyze the performance of hard disks due to the sheer size of the datasets seen by hard disks.  Additionally, hard drive workloads can have several multi-dimensional characteristics, such as access time, queue depth and block-address space. The result is that hard drive workloads are extremely diverse and large, making extracting meaninful information from hard drive workloads very difficult. This is one reason why there are several inefficiencies in storage networks.  
-
+\newline
 In this paper, we develop a tool that assists in communicating valuable insights into these datasets, resulting in an approach that utilizes parallel coordinates to model data storage workloads captured with bus analyzers. Users are presented with an effective visualization of workload captures with this implementation, along with methods to interact with and manipulate the model in order to more clearly analyze the lowest level of their storage systems. 
-
+\newline
 Design decisions regarding the feature set of this tool are based on the analysis needs of domain experts and feedback from a conducted user study. Results from our user study evaluations demonstrate the efficacy of our tool to observe valuable insights, which can potentially assist in future storage system design and deployment decisions. Using this tool, domain experts were able to detect Logical Block Address banding and observe various dataset trends which were not readily noticeable using conventional analysis methods.
 } % end of abstract
 
@@ -128,7 +128,7 @@ Modeling complex data storage system workloads, specifically bus activity traces
 \subsection{Current Methods}
 \label{current_methods}
 
-Currently, storage system performance is captured using bus analyzers, a tool that is designed to observe particular computer bus protocols for the intention of analyzing bus or device failures. Current bus analyzer software tools often focus on bus protocol rather than providing a broad overview of what is occurring between host and storage. Many of the more sophisticated offerings of bus trace analysis tools are developed in house by corporations interested in optimizing their products or systems, rather than the manufacturers of the bus analyzers. Current methods developed generate graphs which are static and do not allow manipulations to the visualization while viewing the data, lacking functions such as scaling particular areas of interest and highlighting interesting trends. At most, these tools offer various graphs comparing a few dimensions of data at a time, as well as general statistics of the input data~\cite{internal:understanding}. Figure \ref{fig:prev_tool2} illustrates a screenshot of a tool currently utilized by our collaborators in the storage system industry to analyze storage system bus captures, here plotting number of sector and logical block address (LBA) values. While this plot and similar tools have proven effective at analyzing these datasets, they are limited in the amount of data they can display. These tools are simple and prove effective, however it is not possible to view more than a few dimensions of records at once, which is less likely to effectively convey a larger picture of the activity between host and storage.
+Currently, storage system performance is captured using bus analyzers, a tool designed to observe particular computer bus protocols for the intention of analyzing bus or device failures. Current bus analyzer software tools often focus on bus protocol rather than providing a broad overview of what is occurring between host and storage. Many of the more sophisticated offerings of bus trace analysis tools are developed in house by corporations interested in optimizing their products or systems, rather than the manufacturers of the bus analyzers. Current methods developed generate graphs which are static and do not allow manipulations to the visualization while viewing the data, lacking functions such as scaling particular areas of interest and highlighting interesting trends. At most, these tools offer various graphs comparing a few dimensions of data at a time, as well as general statistics of the input data~\cite{internal:understanding}. Figure \ref{fig:prev_tool2} illustrates a screenshot of a tool currently utilized by our collaborators in the storage system industry to analyze storage system bus captures, here plotting number of sector and logical block address (LBA) values. While this plot and similar tools have proven effective at analyzing these datasets, they are limited in the amount of data they can display. These tools are simple and prove effective, however it is not possible to view more than a few dimensions of records at once, which is less likely to effectively convey a larger picture of the activity between host and storage.
 
 \begin{figure}[h!]
  \centering
@@ -273,7 +273,7 @@ Most axes are categorized as containing continuous values, containing numerical 
 \end{tabular}
 
 \subsection{Discrete Axes}
-Particular axes, namely: Queued, Command, Alignment, Forced Unit Access (FUA), Sequential, and Cache Hit are recognized as axes with discrete values. This is taken into account when parsing input data and displaying the visualization, primarily by hardcoding the character string values and assigning a numerical value when storing the dataset. Discrete axes will display the full range of the possible values found in the dataset regardless of the current user set focus (although the values themselves will not be visible if they are outside of the user set focus). The possible values and descriptions for these axes are listed below.
+Particular axes, namely: Queued, Command, Alignment, Forced Unit Access (FUA), Sequential, and Cache Hit are recognized as axes with discrete values. This is taken into account when parsing input data and displaying the visualization, primarily by hardcoding the character string values and assigning a numerical value when storing the dataset. Discrete axes will display the full range of the possible values found in the dataset regardless of the current user set focus (although the values themselves will not be visible if they are outside of the user set focus). The possible values and descriptions for these axes are listed below.\newline
 
 \noindent \textbf{Alignment}
 \begin{itemize}
@@ -451,7 +451,7 @@ Most functionality is presented to the user through context menus, as shown in F
 \begin{figure}[h!]
  \centering
  \includegraphics[width=0.25\textwidth]{images/context_menu.eps}
- \caption[Context menus to interact with and manipulate axes.]{The use of context menus to interact with and manipulate parallel coordinates axes.}
+ \caption[Context menus to interact with and manipulate axes.]{The use of a context menu to allow the user to interact with and manipulate parallel coordinates axes, as well as apply focus+context features to the visualization.}
  \label{fig:context_menus}
 \end{figure}
 
@@ -460,7 +460,7 @@ Defining ranges of data is accomplished through the use of sliders and optional 
 \begin{figure}[h!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/select_range.eps}
- \caption[Sliders and input fields for specifying ranges of data.]{The use of sliders and input fields to provide coarse and fine-grain methods for specifying ranges of data.}
+ \caption[Sliders and input fields for specifying ranges of data.]{The use of sliders and input fields to provide coarse and fine-grain methods for selecting ranges of data when applying a focus or brushing.}
  \label{fig:sliders_input}
 \end{figure}
 
@@ -469,7 +469,9 @@ Defining ranges of data is accomplished through the use of sliders and optional 
 We analyzed various storage system captures with our tool, including corporate production workloads. We then conducted a user study that assisted in identifying areas of our visualization that were effective in comparison to tools currently used, and areas which need improvement to better serve our users.
 
 \subsection{Tool Comparison}
-In order to validate our tool, we obtained a production data center capture from a corporate internal mailing service, for the purposes of analyzing their workloads and identifying areas for improving disk utilization. We analyzed these datasets with both traditional analysis tools and our parallel coordinates tool with the assistance of domain experts at Western Digital and made similar discoveries. A comparison between our visualization and current tools used to analyze the same datasets are illustrated in the following figures. Figure \ref{fig:prev_tool} displays the output of a current tool utilized to identify the occurrence of LBA banding, the act of alternating between two LBA bands. LBA banding introduces seek overhead as the drive read-write head must travel back and forth between each LBA band, possibly leading to waiting for full disk revolutions prior to performing the requested operation. This occurrence can lead to a low queue environment, equating to low throughput, and consequently the potential for poor reliability as the drive is subject to adjacent-track interference (ATI), and an uneven spreading of disk lubrication~\cite{internal:collab}. 
+In order to validate our tool, a comparison between our visualization and current tools were used to analyze both sample and production datasets. Currently, analysis of these datasets consisted of parsing through these records with the aid of spreadsheet software, graphing software, and combining multiple approaches to make discoveries or answer hyptheses. The graphs generated in this process are limited to three dimensions. With our tool, users are able to view the full dataset at once, and navigate through the model with one encompassing tool which provides the following visually enhancing features beyond the capabilities found in current approaches: the ability to visualize all nineteen dimensions of workload captures, focus+context features to focus on subsets of data and highlight areas of interest, circular histograms to quickly convey general trends, and the ability to suggest threads to the user identified with unique colors.
+
+Our tool is further validated by making the same discovery of LBA banding, first observed through the use of traditional analysis methods. We obtained a production data center capture from a corporate internal mailing service, for the purposes of analyzing their workloads and identifying areas for improving disk utilization. We analyzed these datasets with both traditional analysis tools and our parallel coordinates tool with the assistance of domain experts at Western Digital and made similar discoveries. Figure \ref{fig:prev_tool} displays the output of a current tool utilized to identify the occurrence of LBA banding, the act of alternating between two LBA bands. LBA banding introduces seek overhead as the drive read-write head must travel back and forth between each LBA band, possibly leading to waiting for full disk revolutions prior to performing the requested operation. This occurrence can lead to a low queue environment, equating to low throughput, and consequently the potential for poor reliability as the drive is subject to adjacent-track interference (ATI), and an uneven spreading of disk lubrication~\cite{internal:collab}. 
 
 \begin{figure}[h!]
  \centering
@@ -483,14 +485,14 @@ We display the same dataset in Figure \ref{fig:lba_banding_full}, which also exh
 \begin{figure}[h!!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/lba_banding_full.eps}
- \caption[Output of our tool identifying the occurrence of LBA banding.]{Output of our tool identifying the occurrence of LBA banding, plotting Command ID on the left and LBA on the right~\cite{internal:collab}.}
+ \caption[Output of our tool identifying the occurrence of LBA banding.]{Output of our tool identifying the occurrence of LBA banding, plotting Command ID on the left and LBA on the right with thread coloring displayed. LBA banding is discovered by observe the behavior of commands on the left accessing various bands of LBA values on the right~\cite{internal:collab}.}
  \label{fig:lba_banding_full}
 \end{figure}
 
 \begin{figure}[h!!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/11.eps}
- \caption[Output of our tool identifying the occurrence of LBA banding.]{Output of our tool identifying the occurrence of LBA banding, plotting Command ID on the left and LBA on the right~\cite{internal:collab}.}
+ \caption[Output of our tool identifying the occurrence of LBA banding.]{Output of our tool identifying the occurrence of LBA banding, plotting Command ID on the left and LBA on the right with thread coloring displayed, and a focus applied to a subset of command IDs that occured sequentially~\cite{internal:collab}.}
  \label{fig:lba_banding}
 \end{figure}
 
@@ -499,7 +501,7 @@ Lastly, we present Figure \ref{fig:no_queue} to illustrate the consequences of L
 \begin{figure}[h!!]
  \centering
  \includegraphics[width=0.5\textwidth]{images/no_queue.eps}
- \caption[Output of our tool identifying the occurrence of LBA banding.]{Output of our tool identifying the occurrence of LBA banding, showing a lack of queue utilization in an overview mode~\cite{internal:collab}.}
+ \caption[Output of our tool identifying the occurrence of LBA banding.]{Our tool identifying the occurrence of LBA banding, displaying the command completion time, queue command completion time, and queue depth dimensions to illustrate a lack of queue utilization in overview mode~\cite{internal:collab}.}
  \label{fig:no_queue}
 \end{figure}
 

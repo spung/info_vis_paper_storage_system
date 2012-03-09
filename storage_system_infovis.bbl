@@ -1,21 +1,11 @@
 \begin{thebibliography}{10}
 
 \bibitem{internal:collab}
-{Chris Lupo, John Oliver, and Western Digital Corporation}.
+{C. Lupo, J. Oliver, and Western Digital Corporation}.
 \newblock Data storage system research collaborative.
 \newblock A collaborative effort between Cal Poly and Western Digital intended
   to analyze various workloads of corporate data centers in order to address
   areas of improvement in disk utilization.
-
-\bibitem{qt:nokia}
-N.~Corporation.
-\newblock {Qt - A cross-platform application and UI framework}.
-\newblock \url{http://qt.nokia.com/products/}.
-
-\bibitem{internal:requirements}
-W.~D. Corporation.
-\newblock Internal conversations regarding internal software tools currently
-  used to analyze storage system workloads.
 
 \bibitem{Graham:2003:UCE}
 M.~Graham and J.~Kennedy.
@@ -49,6 +39,11 @@ K.~McDonnell and K.~Mueller.
 \newblock Illustrative parallel coordinates.
 \newblock {\em Computer Graphics Forum}, 27(3):1031--1038, 2008.
 
+\bibitem{qt:nokia}
+{Nokia Corporation}.
+\newblock {Qt - A cross-platform application and UI framework}.
+\newblock \url{http://qt.nokia.com/products/}.
+
 \bibitem{novotny:2006:OPFC}
 M.~Novotny and H.~Hauser.
 \newblock Outlier-preserving focus+context visualization in parallel
@@ -64,16 +59,21 @@ W.~Peng, M.~O. Ward, and E.~A. Rundensteiner.
   2005.
 
 \bibitem{internal:understanding}
-W.~D.~C. Scott~Olds, Wayne~Vinson.
+{S. Olds, W. Vinson, and Western Digital Corporation}.
 \newblock Understanding drive performance: Performance architecture, modeling,
   and algorithms.
 \newblock Internal document provided through Cal Poly Data Storage System
   Research Collaborative.
 
 \bibitem{website:binning}
-K.~M.~V. Thomas J.~Fellers and M.~W. Davidson.
+{T. J. Fellers, K. M. Vogt, and M. W. Davidson}.
 \newblock {CCD} signal-to-noise ratio.
 \newblock
   \url{http://www.microscopyu.com/tutorials/java/digitalimaging/signaltonoise/index.html}.
+
+\bibitem{internal:requirements}
+{Western Digital Corporation}.
+\newblock Internal conversations regarding internal software tools currently
+  used to analyze storage system workloads.
 
 \end{thebibliography}

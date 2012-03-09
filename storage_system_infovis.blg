@@ -6,40 +6,36 @@ Database file #1: storage_system_infovis.bib
 A bad cross reference---entry "johansson:2007:DCDTPC"
 refers to entry "DBLP:conf/vissym/2007", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/vissym/2007"
-Name 1 in "Thomas J. Fellers, Kimberly M. Vogt, and Michael W. Davidson" has a comma at the end for entry website:binning
-while executing---line 1049 of file abbrv.bst
-Name 1 in "Thomas J. Fellers, Kimberly M. Vogt, and Michael W. Davidson" has a comma at the end for entry website:binning
-while executing---line 1090 of file abbrv.bst
 You've used 12 entries,
             2118 wiz_defined-function locations,
-            574 strings with 6385 characters,
-and the built_in function-call counts, 3661 in all, are:
-= -- 363
-> -- 142
+            574 strings with 6371 characters,
+and the built_in function-call counts, 3625 in all, are:
+= -- 360
+> -- 136
 < -- 3
-+ -- 56
-- -- 44
-* -- 206
-:= -- 584
++ -- 54
+- -- 42
+* -- 202
+:= -- 578
 add.period$ -- 37
 call.type$ -- 12
-change.case$ -- 58
+change.case$ -- 57
 chr.to.int$ -- 0
 cite$ -- 12
 duplicate$ -- 140
 empty$ -- 327
-format.name$ -- 44
-if$ -- 802
+format.name$ -- 42
+if$ -- 795
 int.to.chr$ -- 0
 int.to.str$ -- 12
 missing$ -- 6
 newline$ -- 62
 num.names$ -- 24
-pop$ -- 87
+pop$ -- 86
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 45
 quote$ -- 0
-skip$ -- 122
+skip$ -- 121
 stack$ -- 0
 substring$ -- 207
 swap$ -- 36
@@ -51,4 +47,4 @@ warning$ -- 0
 while$ -- 37
 width$ -- 14
 write$ -- 126
-(There were 3 error messages)
+(There was 1 error message)
