@@ -5,7 +5,7 @@
 \newblock Data storage system research collaborative.
 \newblock A collaborative effort between Cal Poly and Western Digital intended
   to analyze various workloads of corporate data centers in order to address
-  areas of improvement in disk utilization.
+  areas of improvement in drive utilization.
 
 \bibitem{Graham:2003:UCE}
 M.~Graham and J.~Kennedy.
@@ -34,11 +34,6 @@ J.~Johansson, P.~Ljung, and M.~Cooper.
 \newblock Depth cues and density in temporal parallel coordinates.
 \newblock In {\em EuroVis}, pages 35--42, 2007.
 
-\bibitem{McDonnell_Mueller_2008}
-K.~McDonnell and K.~Mueller.
-\newblock Illustrative parallel coordinates.
-\newblock {\em Computer Graphics Forum}, 27(3):1031--1038, 2008.
-
 \bibitem{qt:nokia}
 {Nokia Corporation}.
 \newblock {Qt - A cross-platform application and UI framework}.
@@ -57,6 +52,13 @@ W.~Peng, M.~O. Ward, and E.~A. Rundensteiner.
   dimension reordering.
 \newblock {\em IEEE Symposium on Information Visualization}, 24(4):89--96, Jan.
   2005.
+
+\bibitem{steven_thesis}
+S.~Pungdumri.
+\newblock {An Interactive Visualization Model for Analyzing Data Storage System
+  Workloads}.
+\newblock Master's thesis, California Polytechnic State University – San Luis
+  Obispo, Mar. 2012.
 
 \bibitem{internal:understanding}
 {S. Olds, W. Vinson, and Western Digital Corporation}.

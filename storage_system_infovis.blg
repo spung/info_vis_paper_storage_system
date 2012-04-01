@@ -8,43 +8,43 @@ refers to entry "DBLP:conf/vissym/2007", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/vissym/2007"
 You've used 12 entries,
             2118 wiz_defined-function locations,
-            574 strings with 6371 characters,
-and the built_in function-call counts, 3625 in all, are:
-= -- 360
-> -- 136
+            569 strings with 6292 characters,
+and the built_in function-call counts, 3470 in all, are:
+= -- 344
+> -- 130
 < -- 3
-+ -- 54
-- -- 42
-* -- 202
-:= -- 578
++ -- 52
+- -- 40
+* -- 183
+:= -- 561
 add.period$ -- 37
 call.type$ -- 12
-change.case$ -- 57
+change.case$ -- 56
 chr.to.int$ -- 0
 cite$ -- 12
-duplicate$ -- 140
-empty$ -- 327
-format.name$ -- 42
-if$ -- 795
+duplicate$ -- 137
+empty$ -- 312
+format.name$ -- 40
+if$ -- 761
 int.to.chr$ -- 0
 int.to.str$ -- 12
-missing$ -- 6
+missing$ -- 5
 newline$ -- 62
 num.names$ -- 24
 pop$ -- 86
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 44
 quote$ -- 0
-skip$ -- 121
+skip$ -- 119
 stack$ -- 0
-substring$ -- 207
-swap$ -- 36
+substring$ -- 176
+swap$ -- 35
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 48
 warning$ -- 0
-while$ -- 37
+while$ -- 35
 width$ -- 14
 write$ -- 126
 (There was 1 error message)
